@@ -1,0 +1,1 @@
+tugas menghitung luas persegi
