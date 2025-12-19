@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_detail_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <TextView
+        android:id="@+id/tv_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Wayang"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi lengkap wayang akan muncul di sini."
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#666666"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"/>
+
+</LinearLayout>
