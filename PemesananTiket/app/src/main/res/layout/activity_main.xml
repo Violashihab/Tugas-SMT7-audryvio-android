@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Pemesanan Tiket"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nama Pemesan"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Jumlah Tiket"
+        android:inputType="number"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PESAN TIKET"/>
+
+</LinearLayout>
