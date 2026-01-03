@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context=".RadioButtonActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TUTORIAL RADIOBUTTON"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#E65100"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp" />
+
+        <!-- 1. RadioButton Dasar - Jenis Kelamin -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Pilihan Tunggal - Jenis Kelamin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_pria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pria"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radio_wanita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wanita"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <!-- 2. RadioButton - Pilihan Jurusan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Pilihan Jurusan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teknik Informatika"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radio_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistem Informasi"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radio_dkv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desain Komunikasi Visual"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <!-- 3. RadioButton Horizontal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. RadioButton Horizontal Layout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupKategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio_mahasiswa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mahasiswa"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/radio_dosen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dosen"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/radio_staff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Staff"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+        </RadioGroup>
+
+        <!-- 4. Dynamic RadioButton -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Dynamic RadioButton"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi Default 1"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi Default 2"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_add_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAMBAH OPSI BARU"
+            android:textSize="14sp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Hasil -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil Pilihan:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil akan ditampilkan di sini..."
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT PILIHAN"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET SEMUA PILIHAN"
+            android:textSize="16sp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KEMBALI KE MENU UTAMA"
+            android:textSize="16sp"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
