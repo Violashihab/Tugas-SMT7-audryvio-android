@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92BFEF"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android dan Kotlin Mastery"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp" />
+
+    <!-- ScrollView untuk menampung banyak button -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Group 1: Basic Components -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📱 Basic Components"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tampilan Login"
+                android:id="@+id/button_login"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tampilan Register"
+                android:id="@+id/button_register"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView Dasar"
+                android:id="@+id/button_textview"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_dasar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button Dasar"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton Dasar"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkbox Dasar"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_edittext_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EditText dan ImageView Dasar"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_togglebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton Dasar"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 2: Dasar Pemrograman -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔤 Dasar Pemrograman"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_runtunan_pemilihan_pengulangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Runtunan, Pemilihan, Pengulangan"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_variabel_tipedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Variabel dan Tipe Data"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_control_flow_functions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control Flow &amp; Functions"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 3: List & RecyclerView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 List &amp; RecyclerView"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_listview_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView dengan JSON"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_recyclerview_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView dengan JSON"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 4: OOP & Functional Programming -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 OOP &amp; Functional Programming"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_oop_kotlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OOP di Kotlin"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_functional_programming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Functional Programming"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_lambda_hof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lambda &amp; Higher Order Functions"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 5: Jetpack Compose -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎨 Jetpack Compose"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_compose_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengenalan Jetpack Compose"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_compose_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layouts Dasar Compose"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_compose_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State Management"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_compose_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigation Compose"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_compose_lists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LazyColumn &amp; LazyRow"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 6: Architecture & MVVM -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏗️ Architecture &amp; MVVM"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_mvvm_architecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MVVM Architecture"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_viewmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewModel &amp; Lifecycle"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 7: Networking & API -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌐 Networking &amp; API"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_rest_api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REST API &amp; JSON"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Networking dengan Retrofit"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 8: Coroutines & Async -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚡ Coroutines &amp; Async"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_coroutines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kotlin Coroutines"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_suspend_functions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suspend Functions"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 9: Database & Local Storage -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💾 Database &amp; Local Storage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_room_database"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room Database"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_crud_operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CRUD Operations"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 10: UI Components -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎪 UI Components"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_dialog_toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog, Toast, Notification"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_progress_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress Dialog"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 11: Maps & Location -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🗺️ Maps &amp; Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_google_maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google Maps API"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_location_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location Service"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 12: Libraries -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📚 Important Libraries"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_glide_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glide &amp; Retrofit"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 13: Firebase -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Firebase"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_firebase_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firebase Authentication"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_push_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Push Notification"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <!-- Group 14: Workshop & Projects -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚀 Workshop dan Projects"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/button_workshop_project1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Workshop Proyek I"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_workshop_project2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Workshop Proyek II"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Android &amp; Kotlin Learning Path"
+        android:textSize="12sp"
+        android:textColor="#7F8C8D"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+</LinearLayout>
