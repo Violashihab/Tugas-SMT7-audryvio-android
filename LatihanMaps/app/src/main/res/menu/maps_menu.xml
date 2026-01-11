@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_map_type"
+        android:title="Tipe Peta"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/normal_map"
+                    android:title="Normal"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/satellite_map"
+                    android:title="Satellite" />
+                <item
+                    android:id="@+id/terrain_map"
+                    android:title="Terrain" />
+                <item
+                    android:id="@+id/hybrid_map"
+                    android:title="Hybrid" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_my_location"
+        android:title="Lokasi Saya"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="ifRoom" />
+</menu>

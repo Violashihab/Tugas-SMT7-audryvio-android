@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LatihanMaps</string>
+    <string name="title_activity_maps">LatihanMaps</string>
+
+    <!-- Permission messages -->
+    <string name="location_permission_required">Izin lokasi diperlukan untuk menampilkan posisi Anda di peta</string>
+    <string name="location_permission_denied">Aplikasi tidak dapat berfungsi tanpa izin lokasi</string>
+    <string name="location_not_found">Lokasi tidak ditemukan. Pastikan GPS aktif</string>
+
+    <!-- UI Text -->
+    <string name="current_location">Lokasi Anda Saat Ini:</string>
+    <string name="searching_location">Mencari lokasi...</string>
+    <string name="find_my_location">Cari Lokasi Saya</string>
+    <string name="address_not_found">Alamat tidak ditemukan</string>
+    <string name="failed_to_load_address">Gagal memuat alamat</string>
+</resources>
