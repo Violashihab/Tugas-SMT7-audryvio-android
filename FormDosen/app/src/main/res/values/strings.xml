@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Form Dosen</string>
+
+    <!-- TAMBAHKAN KODE DI BAWAH INI -->
+    <string-array name="jabatan_options">
+        <item>-- Pilih Jabatan --</item>
+        <item>Asisten Ahli</item>
+        <item>Lektor</item>
+        <item>Lektor Kepala</item>
+        <item>Guru Besar</item>
+    </string-array>
+    <!-- SAMPAI DI SINI -->
+
+</resources>
